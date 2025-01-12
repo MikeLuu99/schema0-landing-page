@@ -9,7 +9,7 @@ import {
   Wand2,
   ArrowUpRight,
 } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Logo } from "@/components/logo";
@@ -27,7 +27,22 @@ const container = {
   },
 };
 
-const item = {
+// const item = {
+//   hidden: { opacity: 0, y: 20 },
+//   show: { opacity: 1, y: 0 },
+// };
+
+// const containerVariants: Variants = {
+//   hidden: { opacity: 0 },
+//   show: {
+//     opacity: 1,
+//     transition: {
+//       staggerChildren: 0.1,
+//     },
+//   },
+// };
+
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   show: { opacity: 1, y: 0 },
 };
@@ -151,7 +166,7 @@ export default function LandingPage() {
           className="grid md:grid-cols-3 gap-4 mb-12 max-w-7xl mx-auto"
         >
           {demoItems.map((item) => (
-            <motion.div key={item.title} variants={item}>
+            <motion.div key={item.title} variants={itemVariants}>
               <Sheet
                 open={openSheet === item.title}
                 onOpenChange={(open) =>
