@@ -16,6 +16,7 @@ import { Logo } from "@/components/logo";
 import { Footer } from "@/components/footer";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
+import Navbar from "@/components/navbar";
 
 const container = {
   hidden: { opacity: 0 },
@@ -139,8 +140,8 @@ export default function LandingPage() {
       </div>
 
       {/* Logo */}
-      <div className="absolute top-4 left-4 z-50">
-        <Logo />
+      <div className="fixed top-0 left-0 right-0 w-full z-50">
+        <Navbar />
       </div>
 
       {/* Hero Section */}
