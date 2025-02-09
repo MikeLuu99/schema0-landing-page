@@ -12,7 +12,6 @@ import {
 import { motion, Variants } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Logo } from "@/components/logo";
 import { Footer } from "@/components/footer";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
