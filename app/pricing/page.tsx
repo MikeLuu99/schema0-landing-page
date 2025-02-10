@@ -81,7 +81,7 @@ export default function PricingSection() {
               </li>
               <li className="flex gap-2 text-gray-600">
                 <Check className="w-5 h-5 text-gray-900" />
-                1GB storage per database
+                10,000 database rows
               </li>
               <li className="flex gap-2 text-gray-600">
                 <Check className="w-5 h-5 text-gray-900" />
@@ -122,7 +122,7 @@ export default function PricingSection() {
               </li>
               <li className="flex gap-2 text-gray-600">
                 <Check className="w-5 h-5 text-gray-900" />
-                10GB storage per database
+                1,000,000 database rows
               </li>
               <li className="flex gap-2 text-gray-600">
                 <Check className="w-5 h-5 text-gray-900" />
