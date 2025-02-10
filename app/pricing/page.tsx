@@ -44,7 +44,7 @@ export default function PricingSection() {
           <div className="flex items-center gap-3 self-end">
             <span className="text-sm text-gray-600">Yearly</span>
             {isYearly && (
-              <span className="text-sm text-green-600">(Save 25%)</span>
+              <span className="text-sm text-green-600">(Save 50%)</span>
             )}
             <Switch
               checked={!isYearly}
