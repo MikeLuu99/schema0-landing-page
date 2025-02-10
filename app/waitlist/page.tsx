@@ -18,11 +18,13 @@ export default function BetaSignup() {
     // <p> hello </p>
     <div className="min-h-screen bg-[#1C1C1C] flex flex-col items-center justify-center p-4 font-mono">
       {/* Logo */}
-      <img
+      {/* <Image
         src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-09%20at%2012.17.57%E2%80%AFPM%20(2)-XRfrCWlAECKOPbkm2YGibFElxtnSNm.png"
         alt="Logo"
         className="w-8 h-8 mb-6"
-      />
+        height={8}
+        width={10}
+      /> */}
 
       {/* Heading */}
       <h1 className="text-white text-xl mb-8">Join the waitlist</h1>
@@ -56,23 +58,20 @@ export default function BetaSignup() {
           />
         </div>
 
-        <div className="flex items-center justify-between pt-4">
-          <span className="text-sm text-gray-400">
-            Already have an account?
-          </span>
+        <div className="flex items-center justify-center pt-4">
           <Button
             type="submit"
             disabled={loading}
-            className="bg-white hover:bg-gray-100 text-black rounded px-4 py-2 text-sm font-normal"
+            className="bg-white hover:bg-gray-100 text-black rounded px-4 py-2 text-sm font-normal w-full"
           >
-            Join waitlist →
+            Submit
           </Button>
         </div>
       </form>
 
       {/* Footer */}
       <div className="fixed bottom-6 flex items-center gap-2 text-xs text-gray-500">
-        <span className="inline-block w-4 h-4 rounded-full border border-gray-700 flex items-center justify-center">
+        <span className="w-4 h-4 rounded-full border border-gray-700 flex items-center justify-center">
           ⚡
         </span>
         Beta release • Invite only
